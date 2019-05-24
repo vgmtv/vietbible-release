@@ -19,4 +19,4 @@ before_script:
 script:
   - pwd
   - ls -las
-  - docker build -t vietbible/desktop .
+  - docker build -t vietbible/desktop --build-arg GIT_REPO=$GIT_REPO .
