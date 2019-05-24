@@ -16,4 +16,4 @@ before_script:
   - docker pull nampdn/puskerit:latest
   
 script:
-  - docker run --rm nampdn/puskerit /bin/sh -c "cat puskerit"
+  - docker build -t vietbible/desktop .
