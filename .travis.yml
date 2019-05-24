@@ -16,4 +16,6 @@ before_script:
   - docker pull nampdn/puskerit:latest
   
 script:
+  - pwd
+  - ls -las
   - docker build -t vietbible/desktop .
