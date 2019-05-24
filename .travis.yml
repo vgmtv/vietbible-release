@@ -19,4 +19,4 @@ before_script:
 script:
   - pwd
   - ls -las
-  - docker build -t vietbible/desktop --build-arg GIT_REPO=$GIT_REPO .
+  - docker build -t vietbible/desktop --build-arg GIT_REPO=$GIT_REPO,SSH_PRIVATE_KEY=$SSH_PRIVATE_KEY .
