@@ -2,9 +2,8 @@ FROM nampdn/puskerit:latest
 
 ADD prepare /usr/local/bin/
 
+RUN chmod +x /usr/local/bin/prepare
+
 WORKDIR /usr/local/app
 
-RUN prepare
-
-RUN ls -las
-
+ENTRYPOINT ["/usr/local/bin/prepare"]
