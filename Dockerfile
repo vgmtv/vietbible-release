@@ -9,8 +9,8 @@ ADD prepare /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/prepare
 
+RUN apk add bash
+
 WORKDIR /usr/local/app
 
-RUN prepare
-
-ENTRYPOINT ["/usr/local/bin/prepare"]
+ENTRYPOINT ["/bin/sh"]
