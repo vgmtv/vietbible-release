@@ -19,4 +19,4 @@ before_script:
   - ls -las
   - docker build -t vietbible/desktop --build-arg SSH_PRIVATE_KEY="$SSH_PRIVATE_KEY" .
 script:
-    - docker run --rm vietbible/desktop -e GIT_REPO="git@github.com:vgmtv/vietbible.git" /bin/sh -c "git clone ${GIT_REPO}"
+    - docker run --rm vietbible/desktop /bin/bash -c "git clone git@github.com:vgmtv/vietbible.git"
